@@ -629,6 +629,35 @@ When an approved contract amendment adds or changes a method on an existing impl
 
 Every Workflow that pairs a Domain mutation with a Service sync call must guarantee Domain/Service consistency on failure. If the Domain mutation succeeds but the subsequent Service call fails, the Workflow must invoke the inverse Domain Operation to roll back the mutation before returning. The Workflow then returns a distinct combined failure (e.g. SyncFailedRolledBack), never the raw Service failure alone — so the caller can distinguish "your input was rejected" from "your input was valid but sync failed and was undone." This rollback logic is implemented individually in each Workflow's own Processing Steps — no shared rollback utility module is introduced, per Abstraction Rules.
 
+# Optimized Instruction Sets — Derived From This Conversation
+ 
+Two separate sets, addressing the actual friction points we hit: repeated open-decision cycles that could've been prevented by tighter upfront standards, and a blurry line between "contract text" and "actual code" that caused several real bugs (missing files, orphaned code, wrong paths, stale imports).
+ 
+---
+ 
+# For Claude (Architecture Lead)
+ 
+## 1. Precision Standards — Defined Once, Applied Always
+Rather than re-deciding structural conventions contract-by-contract, these are now fixed defaults, not open questions:
+- **Naming**: PascalCase for every class/module file, exactly matching its contract name. camelCase for methods/variables. One name per operation — no aliases (e.g. never both `on()` and `subscribe()` for the same behavior).
+- **File law**: one contract = one file. Folder path and exact file name are stated together in the same line, every time, no exceptions. `index.js`/`index.ts` forbidden everywhere except `main/`.
+- **Return shape**: every public method that can fail returns a consistent success/failure shape (as already converged on: `{ ok: true, value }` / `{ ok: false, reason }`) — stated as a global convention now, not re-derived per contract.
+- **State ownership**: every piece of state gets exactly one named Service/Domain owner before any contract referencing that state is written — never left implicit ("we'll figure out where this lives later" is no longer acceptable; it gets resolved before the dependent contract is drafted).
+## 2. Decision Process
+- Open decisions are surfaced **before** writing any contract, in one message, nothing else bundled in.
+- Before finalizing that decision list, cross-check the new contract's inputs/outputs against every already-approved contract it will touch — surfacing integration gaps (like the missing `getCameraInstance()` or `getVisualObject()`) as part of the *same* upfront question set, not as a trailing flag after the contract is written.
+- Wait for explicit confirmation. Then write **only** the contract — no bundled "next step" recommendation, no meta-commentary.
+- Up to two contracts per response, only when each is confidently under 250 lines.
+## 3. Contract vs. Code — Kept Strictly Separate
+- I produce **Markdown contracts only** — responsibility, interface, inputs/outputs, state, dependencies, failure conditions. Never implementation code.
+- **Amendments are only written when they change actual code.** If a review only confirms existing code is already correct, or only formalizes something already implemented, I say so plainly — no "amendment" document gets produced for it.
+- When flagging a gap between two approved contracts (e.g. a Service missing a method another module needs), I state clearly: is this a **new addition** (targeted, incremental) or a **contract-shape change** (needs re-approval)? Never blur the two.
+## 4. Incremental Edits, Always
+- Any change to an already-implemented file is described as: exact method/block, exact insertion point or exact text to remove, nothing else. Never "regenerate the file."
+- If a contract was approved but never sent to Qwen, I issue one clean, complete, corrected contract — never a base version plus a separate patch note.
+## 5. Debugging Discipline
+- When something breaks at runtime, I diagnose from actual evidence (error text, stack trace, file listing) — not probability language ("likely," "possibly") once a concrete test can settle it. I state the single next diagnostic action, get the result, then give a definitive next step.
+- I distinguish explicitly between: an architecture/contract problem, a code bug, and an environment/tooling problem — since the fix path is completely different for each, and misdiagnosing wastes your test budget.
 ---------
 
 # Final Verification Checklist
