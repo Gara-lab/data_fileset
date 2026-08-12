@@ -1,0 +1,270 @@
+# Excel beginner MVP — step-by-step production plan
+
+## 1. Define the product
+
+* Target: Excel beginners who want practical workplace skills.
+* Promise: learn useful Excel concepts, apply them to realistic work situations, practice them, and reuse ready-made resources.
+* Format: concise PDF course + cheat sheets + templates.
+* Estimated learning time: **12–17 hours**, including exercises.
+* Do not market it as a 17-hour course.
+* Market it as a **practical Excel toolkit for work**.
+
+## 2. PDF structure
+
+### Front matter
+
+* Cover.
+* Short introduction.
+* Who the PDF is for.
+* What the learner will be able to do.
+* How to use the PDF.
+* Recommended learning approach.
+* Quick-start lesson for an immediate useful result.
+
+### Module 1 — Excel foundations
+
+**Estimated time: 2–3 hours**
+
+Cover:
+
+* Excel interface.
+* Workbooks and worksheets.
+* Rows, columns and cells.
+* Entering and editing data.
+* Selecting, copying, moving and filling cells.
+* Basic formatting.
+* Number formats.
+* Row and column sizing.
+* Sorting and filtering.
+
+Goal:
+
+* Make the learner comfortable navigating and manipulating a basic spreadsheet.
+
+### Module 2 — Basic calculations
+
+**Estimated time: 3–4 hours**
+
+Cover:
+
+* Basic arithmetic.
+* `SUM`.
+* `AVERAGE`.
+* `MIN`.
+* `MAX`.
+* `COUNT`.
+* `COUNTA`.
+* Relative references.
+* Absolute references.
+* Applying formulas across rows and columns.
+
+Goal:
+
+* Make the learner capable of building simple calculation sheets.
+
+### Module 3 — Making spreadsheets useful
+
+**Estimated time: 3–4 hours**
+
+Cover:
+
+* Excel tables.
+* Conditional formatting.
+* Data validation and drop-down lists.
+* Find and replace.
+* Removing duplicates.
+* Basic text manipulation.
+* Basic date manipulation.
+
+Goal:
+
+* Make ordinary spreadsheets easier to maintain, read and use.
+
+### Module 4 — Beginner professional Excel
+
+**Estimated time: 4–6 hours**
+
+Cover:
+
+* `IF`.
+* Basic `SUMIF`.
+* Basic `COUNTIF`.
+* Basic charts.
+* Combining previously learned concepts.
+* Simple professional spreadsheet projects.
+
+Goal:
+
+* Move the learner from basic Excel knowledge toward practical workplace use.
+
+## 3. Standard lesson structure
+
+For every important concept:
+
+1. **Concept**
+
+   * Explain what it is.
+   * Explain why it exists.
+   * Keep the explanation beginner-friendly.
+
+2. **When to use it**
+
+   * Identify practical situations where the concept is useful.
+
+3. **Example use-case**
+
+   * Use realistic professional data.
+   * Show the problem before showing the solution.
+   * Explain the solution step by step.
+
+4. **Exercise**
+
+   * Give the learner a similar problem to solve independently.
+   * Avoid exercises that only require copying the example.
+
+5. **Common mistakes**
+
+   * Show the most relevant beginner mistakes.
+   * Explain how to recognize and fix them.
+
+6. **Quick reference**
+
+   * Give the essential formula, steps, shortcuts or rules.
+
+7. **Connection**
+
+   * Briefly show how the concept connects with previously learned concepts.
+
+## 4. Templates
+
+Create approximately **5–8 high-quality templates**.
+
+Prioritize practical beginner use cases such as:
+
+* Expense tracking.
+* Sales tracking.
+* Invoice or payment tracking.
+* Inventory.
+* Attendance.
+* Employee leave.
+* Simple budgeting.
+* Basic reporting.
+
+For every template:
+
+* Explain its purpose.
+* Identify the concepts used.
+* Explain how to use it.
+* Include realistic sample data.
+* Make important input areas obvious.
+* Keep it editable.
+* Avoid unnecessary complexity.
+
+Templates should reinforce the lessons rather than exist as unrelated bonuses.
+
+## 5. Cheat sheets
+
+Create concise cheat sheets covering:
+
+* Essential formulas.
+* Common operators.
+* Cell references.
+* Number formats.
+* Common keyboard shortcuts.
+* Sorting and filtering.
+* Conditional formatting.
+* Data validation.
+* Common beginner mistakes.
+* Basic chart selection.
+
+Keep cheat sheets usable as **quick references**, not miniature lessons.
+
+## 6. Free Facebook content
+
+Do not create a separate curriculum.
+
+Use the same concepts from the PDF and repeatedly turn them into standalone free content.
+
+For each concept, vary:
+
+* Example.
+* Professional situation.
+* Problem.
+* Hook.
+* Dataset.
+* Explanation angle.
+* Format.
+* Difficulty.
+
+Free content should provide genuine value while leaving the structured depth, exercises, templates and complete toolkit inside the paid product.
+
+Principle:
+
+> **Free content teaches useful individual ideas. Paid content organizes them into a practical system.**
+
+## 7. Content creation rules
+
+* Keep the MVP beginner-level.
+* Prioritize practical usefulness over feature count.
+* Explain concepts through real problems.
+* Give the learner an early win.
+* Keep individual lessons short enough to finish comfortably.
+* Do not require linear completion for every use case.
+* Allow learners to jump directly to relevant templates or lessons.
+* Clearly identify prerequisite lessons when necessary.
+* Avoid unnecessary theory.
+* Avoid advanced Excel features.
+* Do not add content merely to increase page count.
+* Use consistent terminology throughout the PDF.
+* Use realistic business examples.
+* Prefer screenshots and visual demonstrations where they genuinely improve understanding.
+* Test every formula, exercise and template before publishing.
+* Ensure every template works independently.
+* Make the PDF useful even when the learner only studies selected sections.
+
+## 8. Scope boundary
+
+Do **not** include in the first MVP:
+
+* XLOOKUP or advanced lookup techniques.
+* PivotTables.
+* Power Query.
+* Macros or VBA.
+* Advanced dashboards.
+* Advanced financial functions.
+* Advanced statistical functions.
+* Complex automation.
+* Specialized professional workflows.
+
+Reserve these for future products.
+
+## 9. Completion criteria
+
+The MVP is ready for sale when:
+
+* Every included concept has a clear practical purpose.
+* Every major concept has an example.
+* Every major concept has an exercise.
+* Templates are functional and tested.
+* Cheat sheets are complete.
+* The learner can obtain a useful result within the first lesson.
+* The PDF does not require completing every lesson to be useful.
+* The entire product can reasonably be completed in roughly **12–17 hours**.
+* The product feels like a practical toolkit rather than a collection of tutorials.
+* The creator can finish and publish it without spending months building it.
+
+## 10. Validation after launch
+
+Collect feedback on:
+
+* Why the buyer purchased.
+* Their Excel level before starting.
+* Their professional use case.
+* Which lessons were most useful.
+* Which lessons were confusing.
+* Which templates were used.
+* Which templates were missing.
+* Where they stopped or lost motivation.
+* What Excel problem they want solved next.
+
+Use this information to improve the MVP and determine the subject of the next PDF.
