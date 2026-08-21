@@ -1,0 +1,1 @@
+Placeholder file so this empty folder can be tracked by git (Git does not track empty directories). Safe to delete once this folder has real content.
